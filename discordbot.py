@@ -13,10 +13,10 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
+  channel = client.get_channel(701731353783304225)
   if message.channel.name == "bot_control":
-    channel = client.get_channel(701731353783304225)
-    await channel.send("削除を開始します")
-    if message.content == "delete":
+    if message.content = "delete":
+      await channel.send("削除を開始します")
       if message.author.bot:
         return
       if message.channel.name == 'bot_control':
